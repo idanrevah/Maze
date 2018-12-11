@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="59.0" prefWidth="591.0" text="The object of the game is for the player to find">
+               <font>
+                  <Font name="Agency FB" size="28.0" />
+               </font></Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="591.0" text="their way out of a challenging maze.">
+               <font>
+                  <Font name="Agency FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="591.0" text="Game Controllers:" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="128.0" prefHeight="31.0" prefWidth="116.0" text="numpad 8 - UP" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="187.0" prefHeight="26.0" prefWidth="133.0" text="numpad 2 - DOWN" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="246.0" prefHeight="32.0" prefWidth="128.0" text="numpad 6 - RIGHT" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="305.0" prefHeight="29.0" prefWidth="115.0" text="numpad 4 - LEFT" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="364.0" prefHeight="35.0" prefWidth="160.0" text="numpad 9 - UP+RIGHT" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="305.0" prefHeight="35.0" prefWidth="151.0" text="numpad 7 - UP+LEFT" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="340.0" prefHeight="35.0" prefWidth="180.0" text="numpad 3 - DOWN+RIGHT" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="375.0" prefHeight="35.0" prefWidth="174.0" text="numpad 1 - DOWN+LEFT" textFill="#3214c9">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

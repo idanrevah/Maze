@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="434.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                  <!--
+                <MenuItem fx:id="m_new" mnemonicParsing="false" onAction="#newScene" text="New" />
+                -->
+                  <MenuItem fx:id="m_load" mnemonicParsing="false" onAction="#loadScene" text="Load" />
+                  <MenuItem mnemonicParsing="false" onAction="#Exit" text="Exit" />
+             </items>
+           </Menu>
+               <Menu mnemonicParsing="false" text="Options">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#propScene" text="Properties" />
+               </items></Menu>
+               <Menu mnemonicParsing="false" text="Help">
+              <items>
+                       <MenuItem mnemonicParsing="false" onAction="#HelpScene" text="Help" />
+              </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="About">
+              <items>
+                 <MenuItem mnemonicParsing="false" onAction="#AboutScene" text="About" />
+              </items></Menu>
+           </menus>
+       </MenuBar>
+   </top>
+  <bottom>
+     <GridPane prefHeight="110.0" prefWidth="665.0" BorderPane.alignment="CENTER">
+       <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="125.99996948242188" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="125.99996948242188" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="83.0" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0000305175781" minWidth="10.0" prefWidth="99.33331298828125" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0000305175781" minWidth="10.0" prefWidth="80.6666259765625" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0000305175781" minWidth="10.0" prefWidth="153.3333740234375" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0000305175781" minWidth="4.66668701171875" prefWidth="28.66668701171875" />
+       </columnConstraints>
+       <rowConstraints>
+           <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+           <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+       </rowConstraints>
+        <children>
+               <Button fx:id="btn_generateMaze" mnemonicParsing="false" onAction="#GameScene" prefHeight="43.0" prefWidth="105.0" text="Generate Maze" GridPane.columnIndex="5" />
+           <ImageView fx:id="img_ready" fitHeight="97.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <CheckBox fx:id="check_box_mute" mnemonicParsing="false" onAction="#mute" prefHeight="17.0" prefWidth="67.0" text="Mute" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        </children>
+     </GridPane>
+  </bottom>
+  <center>
+     <Pane prefHeight="291.0" prefWidth="303.0" BorderPane.alignment="CENTER">
+        <children>
+           <Button fx:id="btn_prev_player" layoutX="244.0" layoutY="156.0" mnemonicParsing="false" onAction="#prevPlayer" text="&lt;" />
+           <Button fx:id="btn_prev_wall" layoutX="244.0" layoutY="266.0" mnemonicParsing="false" onAction="#prevWall" text="&lt;" />
+           <ImageView fx:id="img_player" fitHeight="85.0" fitWidth="100.0" layoutX="281.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="img_wall" fitHeight="85.0" fitWidth="100.0" layoutX="281.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="img_welcome" fitHeight="69.0" fitWidth="398.0" layoutX="111.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="img_choose_player" fitHeight="42.0" fitWidth="200.0" layoutX="28.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="img_choose_wall" fitHeight="42.0" fitWidth="200.0" layoutX="28.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" />
+           <Button fx:id="next_player" layoutX="390.0" layoutY="156.0" mnemonicParsing="false" onAction="#nextPlayer" text="&gt;" />
+           <Button fx:id="next_wall" layoutX="390.0" layoutY="266.0" mnemonicParsing="false" onAction="#nextWall" text="&gt;" />
+        </children>
+     </Pane>
+  </center>
+  <right>
+     <Pane prefHeight="347.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+        <children>
+           <ImageView fx:id="img_row" fitHeight="35.0" fitWidth="87.0" layoutX="71.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="img_col" fitHeight="35.0" fitWidth="87.0" layoutX="71.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" />
+           <TextField fx:id="txt_rows" layoutX="81.0" layoutY="161.0" prefHeight="14.0" prefWidth="67.0" />
+           <TextField fx:id="txt_columns" layoutX="81.0" layoutY="262.0" prefHeight="14.0" prefWidth="67.0" />
+        </children>
+     </Pane>
+  </right>
+</BorderPane>

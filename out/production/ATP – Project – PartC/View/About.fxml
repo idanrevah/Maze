@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AboutController">
+    <center>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.6666259765625" minWidth="0.0" prefWidth="64.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.33331298828125" minWidth="10.0" prefWidth="288.3333740234375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.66668701171875" minWidth="10.0" prefWidth="234.6666259765625" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="68.33332824707031" minHeight="10.0" prefHeight="57.66667175292969" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="188.66668701171875" minHeight="10.0" prefHeight="140.66668701171875" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="33.33331298828125" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="About the programmers:" textFill="#44288a" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Chiller" size="38.0" />
+                    </font>
+                </Label>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <children>
+                        <ImageView fx:id="ben_moalem" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <children>
+                        <ImageView fx:id="idan_revah" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </VBox>
+                <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="244.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="123.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Ben Moalem:">
+                            <font>
+                                <Font name="Chiller" size="31.0" />
+                            </font>
+                        </Label>
+                        <VBox prefHeight="87.0" prefWidth="268.0" GridPane.rowIndex="1">
+                            <children>
+                                <Label prefHeight="27.0" prefWidth="224.0" text="I'm living in Ramat Hasharon.">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="238.0" text="I have two brothers and two sisters">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="10.0" layoutY="37.0" prefHeight="27.0" prefWidth="264.0" text="LOVE Studying and hope to be a DR.">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="39.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Idan Revah:" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Chiller" size="33.0" />
+                            </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                            <children>
+                                <Label prefHeight="27.0" prefWidth="224.0" text="I'm living in Afula.">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="245.0" text="I have two brothers and one sister">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="10.0" layoutY="37.0" prefHeight="27.0" prefWidth="245.0" text="LOVE Programming and believe i ">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="10.0" layoutY="64.0" prefHeight="27.0" prefWidth="245.0" text="will change something in the world!">
+                                    <font>
+                                        <Font name="Arial Narrow" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </GridPane>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>

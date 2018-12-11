@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import View.MazeDisplayer?>
+<?import View.PlayerDisplayer?>
+<?import View.SolutionDisplayer?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#KeyPressed" prefHeight="616.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GameController">
+   <center>
+       <Pane id="maze_pane" layoutX="40.0" layoutY="40.0" onScroll="#MouseScrolling" BorderPane.alignment="CENTER">
+           <children>
+               <MazeDisplayer fx:id="mazeDisplayer" height="500.0" imageFileNameFinish="Resources/Pics/end_point.gif" imageFileNameStart="Resources/Pics/start_point.jpg" imageFileNameWall="Resources/Pics/wall1.jpg" layoutX="40.0" layoutY="20.0" width="500.0" />
+               <Pane id="solution_pane" layoutX="40.0" layoutY="20.0">
+                   <children>
+                       <SolutionDisplayer fx:id="solutionDisplayer" height="500.0" imageFileNamePath="Resources/Pics/steps.jpg" width="500.0" />
+                       <Pane id="char_pane" mouseTransparent="true">
+                           <children>
+                               <PlayerDisplayer fx:id="playerDisplayer" height="500.0" imageFileNameCharacter="Resources/Pics/player1.jpg" width="500.0" />
+                           </children>
+                       </Pane>
+                   </children>
+               </Pane>
+           </children>
+           <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+       </Pane>
+   </center>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="389.0" minWidth="10.0" prefWidth="218.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="649.0" minWidth="10.0" prefWidth="234.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="649.0" minWidth="10.0" prefWidth="340.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn_solveMaze" mnemonicParsing="false" onAction="#MazeSolver" prefHeight="39.0" prefWidth="211.0" text="I'm not good enough" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn_save" mnemonicParsing="false" onAction="#saveMaze" text="Save Maze" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <CheckBox fx:id="check_box_mute" mnemonicParsing="false" onAction="#mute" text="Mute" GridPane.rowIndex="2" />
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="66.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="168.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#closeStage" prefHeight="39.0" prefWidth="142.0" text="Back to menu" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
